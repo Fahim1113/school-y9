@@ -1,6 +1,5 @@
-/.config
-/.git
-/venv
+.config/
+venv/
 .replit
 replit.nix
-/.upm
+.upm/
