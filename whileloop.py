@@ -8,21 +8,21 @@ print("thanks :)")
 #example 2
 import random
 
-a = random.randint(0,100)
-b = random.randint(0,100)
-
 count = 0
 score = 0
-total = 10
-
-ans = int(input("what is "+str(a)+"+"+str(b)+"? "))
+total = 3
 
 while count<total:
-  
-  print("incorrect")
-  
   a = random.randint(0,100)
   b = random.randint(0,100)
   ans = int(input("what is "+str(a)+"+"+str(b)+"? "))
+
+  if ans == a+b:
+    print("correct")
+    score+=1
+  else:
+    print("incorrect")
   
-print("correct")
+  count+=1
+  
+print("you got", score, "/", total) 
