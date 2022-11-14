@@ -5,6 +5,7 @@ while ans != "yes":
   print("aww")
   ans = input("can i have icecream? ")
 print("thanks :)")
+
 #example 2
 import random
 
@@ -25,4 +26,14 @@ while count<total:
   
   count+=1
   
-print("you got", score, "/", total) 
+print("you got", score, "/", total)
+
+#example 3
+subject = input("what is your fav subject? ")
+
+while subject != "computing":
+  print("incorrect")
+  print("try again")
+  subject = input("what is your fav subject? ")
+
+print("correct")
